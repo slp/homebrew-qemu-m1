@@ -6,6 +6,11 @@ class QemuM1 < Formula
   sha256 "d63f75222f2b04a7efcc57f3159c01a29a2301ef12ed33e4b6d27950f6b4e83c"
   license "GPL-2.0-only"
 
+  bottle do
+    root_url "https://github.com/slp/homebrew-qemu-m1/releases/download/qemu-m1-6.1.0-m1-r1"
+    sha256 catalina: "951ae93925cd0847a2421418034f47c57d85bfb91e1c0b53974ab5de7a5b4c20"
+  end
+
   depends_on "libtool" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
